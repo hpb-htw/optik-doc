@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Asymptote: asy-img/optik/optik.asy Source File</title>
+<title>Asymptote: optik/optik.asy Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4cd664deb0a5435e865d4f85b64ffa87.html">asy-img</a></li><li class="navelem"><a class="el" href="dir_85675b38092b9a90a78301d75da06d80.html">optik</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_2f4b0e3f7228a8a58f304c0d14a471f0.html">optik</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -98,236 +98,260 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structPlanaMirror.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structPlanaMirror.html">PlanaMirror</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a6a2e0aee263b2ca043b034a78eca704a">   22</a></span>&#160;    vector <a class="code" href="structPlanaMirror.html#a6a2e0aee263b2ca043b034a78eca704a">normalDirection</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#adf1626a518f9a025daa80c5d6952ac8b">   23</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#adf1626a518f9a025daa80c5d6952ac8b">center</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a78eee01f48a31be05a7e91fe313604d1">   24</a></span>&#160;    line <a class="code" href="structPlanaMirror.html#a78eee01f48a31be05a7e91fe313604d1">normalLine</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#ab504ca03288a6d64aa0ff1f047faf4ee">   25</a></span>&#160;    line <a class="code" href="structPlanaMirror.html#ab504ca03288a6d64aa0ff1f047faf4ee">surfaceLine</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#aeeb1f3735c866d854a2d6b032ea78c34">   26</a></span>&#160;    <span class="keyword">private</span> transform <a class="code" href="structPlanaMirror.html#aeeb1f3735c866d854a2d6b032ea78c34">t</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// properties for drawing:</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a654317e9b71f2ae8a339217cd37c756a">   28</a></span>&#160;    vector <a class="code" href="structPlanaMirror.html#a654317e9b71f2ae8a339217cd37c756a">offsetP</a> ;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a3597461644ea04749c0f6c8d0b229cd1">   29</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#a3597461644ea04749c0f6c8d0b229cd1">mostLeft</a> ;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#aca117a42aba2ce8fff2bf0a70a9510ad">   30</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#aca117a42aba2ce8fff2bf0a70a9510ad">leftOffset</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a003707583c5c7506fcb77867d61bbecd">   31</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#a003707583c5c7506fcb77867d61bbecd">mostRight</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a344dd073c81b8e59857a3fc94837e766">   32</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#a344dd073c81b8e59857a3fc94837e766">rightOffset</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#afaec4ac86c9d643cf464180ba47bb82b">   33</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#afaec4ac86c9d643cf464180ba47bb82b">normalFarthest</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#ae3ddaad2e23971def9a71f2fde5521da">   35</a></span>&#160;    real <a class="code" href="structPlanaMirror.html#ae3ddaad2e23971def9a71f2fde5521da">normalLength</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     * create a PlanaMirror.</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     * @param normalDirection direction of normal line</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     * @param center the (default) entry point of the incomming ray</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a41863ea67e621c5edfa05d66061ef5a5">   42</a></span>&#160;    <span class="keywordtype">void</span> <span class="keyword">operator</span> init(vector <a class="code" href="structPlanaMirror.html#a6a2e0aee263b2ca043b034a78eca704a">normalDirection</a>=(0, 1), point <a class="code" href="structPlanaMirror.html#adf1626a518f9a025daa80c5d6952ac8b">center</a> = (0,0)) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        this.normalDirection = <a class="code" href="structPlanaMirror.html#a6a2e0aee263b2ca043b034a78eca704a">normalDirection</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        this.center = <a class="code" href="structPlanaMirror.html#adf1626a518f9a025daa80c5d6952ac8b">center</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        this.normalLine = line(this.center, <span class="keyword">false</span>, this.center+<a class="code" href="structPlanaMirror.html#a6a2e0aee263b2ca043b034a78eca704a">normalDirection</a>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        this.surfaceLine = perpendicular(this.center, this.normalDirection);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        this.t = reflect( <a class="code" href="structPlanaMirror.html#a78eee01f48a31be05a7e91fe313604d1">normalLine</a> );</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">     * @param incidentPosition the position of the incident point on the mirror surface.</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">     * That is the distance from this point to the mirror center.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// conceptual properties</span><span class="comment"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">     * is oriented from mirror surface to outside.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a6a2e0aee263b2ca043b034a78eca704a">   25</a></span>&#160;    vector <a class="code" href="structPlanaMirror.html#a6a2e0aee263b2ca043b034a78eca704a">normalDirection</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     * center point of the mirror</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#adf1626a518f9a025daa80c5d6952ac8b">   29</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#adf1626a518f9a025daa80c5d6952ac8b">center</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     * line defined by center point and normal direction.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a78eee01f48a31be05a7e91fe313604d1">   33</a></span>&#160;    line <a class="code" href="structPlanaMirror.html#a78eee01f48a31be05a7e91fe313604d1">normalLine</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * reflecting line of the mirror (&quot;front side&quot;)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#ab504ca03288a6d64aa0ff1f047faf4ee">   37</a></span>&#160;    line <a class="code" href="structPlanaMirror.html#ab504ca03288a6d64aa0ff1f047faf4ee">surfaceLine</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// properties for drawing:</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// private:</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a5fafa7e1472d809f6041e7e01a8a39c2">   41</a></span>&#160;    <span class="keyword">private</span> vector <a class="code" href="structPlanaMirror.html#a5fafa7e1472d809f6041e7e01a8a39c2">offsetP</a> ;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a3597461644ea04749c0f6c8d0b229cd1">   42</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#a3597461644ea04749c0f6c8d0b229cd1">mostLeft</a> ;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#aca117a42aba2ce8fff2bf0a70a9510ad">   43</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#aca117a42aba2ce8fff2bf0a70a9510ad">leftOffset</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a003707583c5c7506fcb77867d61bbecd">   44</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#a003707583c5c7506fcb77867d61bbecd">mostRight</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a344dd073c81b8e59857a3fc94837e766">   45</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#a344dd073c81b8e59857a3fc94837e766">rightOffset</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#afaec4ac86c9d643cf464180ba47bb82b">   46</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#afaec4ac86c9d643cf464180ba47bb82b">normalFarthest</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#ae3ddaad2e23971def9a71f2fde5521da">   48</a></span>&#160;    real <a class="code" href="structPlanaMirror.html#ae3ddaad2e23971def9a71f2fde5521da">normalLength</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">     * create a PlanaMirror.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">     * @param normalDirection direction of normal line</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">     * @param center the (default) entry point of the incomming ray</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">   55</a></span>&#160;    <a class="code" href="structNormalLine.html">NormalLine</a> <a class="code" href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">calculateNormal</a>(real incidentPosition) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span>(incidentPosition != 0) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            point tmpEntry = curpoint(this.surfaceLine, incidentPosition);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            line tmpNorm = line(tmpEntry, tmpEntry + this.normalDirection);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="structNormalLine.html">NormalLine</a>(tmpEntry, tmpNorm);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="structNormalLine.html">NormalLine</a>(this.center, this.normalLine);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">     * calculate the entry point of a ray defined by source of light (point) and by a propagation direction (vector).</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">     * @param source source of the ray</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">     * @param direction propagation-direction of the ray</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">     * @return Normal Line at the entry point of this ray</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a41863ea67e621c5edfa05d66061ef5a5">   55</a></span>&#160;    <span class="keywordtype">void</span> <span class="keyword">operator</span> init(vector <a class="code" href="structPlanaMirror.html#a6a2e0aee263b2ca043b034a78eca704a">normalDirection</a>=(0, 1), point <a class="code" href="structPlanaMirror.html#adf1626a518f9a025daa80c5d6952ac8b">center</a> = (0,0)) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        this.normalDirection = <a class="code" href="structPlanaMirror.html#a6a2e0aee263b2ca043b034a78eca704a">normalDirection</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        this.center = <a class="code" href="structPlanaMirror.html#adf1626a518f9a025daa80c5d6952ac8b">center</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        this.normalLine = line(this.center, <span class="keyword">false</span>, this.center+<a class="code" href="structPlanaMirror.html#a6a2e0aee263b2ca043b034a78eca704a">normalDirection</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        this.surfaceLine = perpendicular(this.center, this.normalDirection);        </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">     * calculates the normal line by a given distance from center point of the mirror.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">     * the vector in the instance of NormalLine is oriented in the direction from the</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">     * mirror surface to outside.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">     * @param incidentPosition the position of the incident point on the mirror surface.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">     * That is the distance from this point to the mirror center.</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#ab8481a747922141e2163c81c5f040b41">   71</a></span>&#160;    <a class="code" href="structNormalLine.html">NormalLine</a> <a class="code" href="structPlanaMirror.html#ab8481a747922141e2163c81c5f040b41">calculateNormal</a>(point source, vector direction) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        line incidentRay = line(source, source + direction);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        point entryPoint = intersectionpoint(incidentRay, this.surfaceLine);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        line tmpNormal = line(entryPoint, entryPoint + this.normalDirection);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structNormalLine.html">NormalLine</a>(entryPoint, tmpNormal);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#af9497d653fa5b5585df9bb9c1dbd8bb0">   78</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#af9497d653fa5b5585df9bb9c1dbd8bb0">reflectedPoint</a>(point source, <a class="code" href="structNormalLine.html">NormalLine</a> nl){</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        line tmpNorm = nl.<a class="code" href="structNormalLine.html#a950f30dd64708d2c304aa850db160a67">normalLine</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        transform tt = reflect(tmpNorm);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> tt * source;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">     * calculate the reflected ray of a entry ray from given source to the (default) entry</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">     * point of this mirror</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a96eb6d16f68d9908ff464ccfe1348425">   88</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#a96eb6d16f68d9908ff464ccfe1348425">reflectedPoint</a>(point source, real incidentPosition=0) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="structNormalLine.html">NormalLine</a> nl = <a class="code" href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">calculateNormal</a>(incidentPosition);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="structPlanaMirror.html#af9497d653fa5b5585df9bb9c1dbd8bb0">reflectedPoint</a>(source, nl);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">     * Image point of a given source point, that is the symetrical point of the source point</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">     * relativity to the mirror surface</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a1b49f39fea07bf3b7b332761c80e0562">   97</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#a1b49f39fea07bf3b7b332761c80e0562">imagePoint</a>(point source){</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        transform m = reflect(this.surfaceLine);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> m*source;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">     * setup size for mirror to make it draw-able</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">     * @param leftWidth distance from entry point to the left side of the mirror</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">     * @param rightWidth distance from entry point to the right side of the mirror</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">     * @param normalLength the length of the drawn part of the normal ray, measured from entry point</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">     * @return this mirror</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#aca56ae0d51f4eec2e95ad2f7fad11809">  111</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#aca56ae0d51f4eec2e95ad2f7fad11809">setupMirrorSize</a>(real leftWidth, real rightWidth=leftWidth, real <a class="code" href="structPlanaMirror.html#ae3ddaad2e23971def9a71f2fde5521da">normalLength</a>=leftWidth, real thickness=<a class="code" href="optik_8asy.html#a25fc3f9b400c22e827137f4017885b98">mirrorThickness</a>){</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">// properties for drawing:</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        this.offsetP = -thickness * unit(this.normalDirection);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        this.mostLeft = curpoint(this.surfaceLine, leftWidth);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        this.leftOffset = this.mostLeft + this.<a class="code" href="structPlanaMirror.html#a654317e9b71f2ae8a339217cd37c756a">offsetP</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        this.mostRight = curpoint(this.surfaceLine, -rightWidth);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        this.rightOffset = this.mostRight + this.<a class="code" href="structPlanaMirror.html#a654317e9b71f2ae8a339217cd37c756a">offsetP</a>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        this.normalLength = <a class="code" href="structPlanaMirror.html#ae3ddaad2e23971def9a71f2fde5521da">normalLength</a>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        this.normalFarthest = this.normalLength*unit(this.normalDirection);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">     * draw the mirror accorded to its side</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a1fe01c4514a7ca8a41aa48b8f6e7a97d">  129</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a1fe01c4514a7ca8a41aa48b8f6e7a97d">drawMirror</a>(<span class="keywordtype">bool</span> withNormal=<span class="keyword">true</span>, pen p=defaultpen) {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        segment mSurface = segment(<a class="code" href="structPlanaMirror.html#a3597461644ea04749c0f6c8d0b229cd1">mostLeft</a>, <a class="code" href="structPlanaMirror.html#a003707583c5c7506fcb77867d61bbecd">mostRight</a>);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        fill( <a class="code" href="structPlanaMirror.html#a3597461644ea04749c0f6c8d0b229cd1">mostLeft</a> -- <a class="code" href="structPlanaMirror.html#aca117a42aba2ce8fff2bf0a70a9510ad">leftOffset</a> -- <a class="code" href="structPlanaMirror.html#a344dd073c81b8e59857a3fc94837e766">rightOffset</a> -- <a class="code" href="structPlanaMirror.html#a003707583c5c7506fcb77867d61bbecd">mostRight</a> -- cycle, p + <a class="code" href="optik_8asy.html#a425696fae280e2c9847c2f2b1261dae7">mirrorColor</a> );</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        draw( mSurface );</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">if</span>(withNormal) {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            segment mNormal = segment(this.center + <a class="code" href="structPlanaMirror.html#a654317e9b71f2ae8a339217cd37c756a">offsetP</a>, this.center);<span class="comment">//</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            draw( mNormal, p);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            segment trueNormal = segment(this.center, this.normalFarthest);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            draw( trueNormal, p + <a class="code" href="optik_8asy.html#af9af1839c3950b3d6fcdbcd0c5814598">mirrorNormalLine</a> );</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">     * @param nl must be calculate before</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a0ccdea4f7eebad1cb2a7ae17604c4c83">  146</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a0ccdea4f7eebad1cb2a7ae17604c4c83">drawNormal</a>(<a class="code" href="structNormalLine.html">NormalLine</a> nl, real length=this.normalLength, pen p = defaultpen) {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        segment trueNormal = segment(nl.<a class="code" href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">entry</a>, nl.<a class="code" href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">entry</a> + length*unit(this.normalDirection));</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        draw( trueNormal, p + <a class="code" href="optik_8asy.html#af9af1839c3950b3d6fcdbcd0c5814598">mirrorNormalLine</a> );</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">     * @param incidentPosition is used to calculate the normal line and the contact point on the surface of mirror</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">     * @param length the length of the normal segment</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a6c5be3a59bfa9b75c63fd7235bebdc2e">  156</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a6c5be3a59bfa9b75c63fd7235bebdc2e">drawNormal</a>(real incidentPosition, real length=this.normalLength, pen p = defaultpen) {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="structNormalLine.html">NormalLine</a> nl = this.<a class="code" href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">calculateNormal</a>(incidentPosition);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="structPlanaMirror.html#a0ccdea4f7eebad1cb2a7ae17604c4c83">drawNormal</a>(nl, length, p);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">   71</a></span>&#160;    <a class="code" href="structNormalLine.html">NormalLine</a> <a class="code" href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">calculateNormal</a>(real incidentPosition) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span>(incidentPosition != 0) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            point tmpEntry = curpoint(this.surfaceLine, incidentPosition);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            line tmpNorm = line(tmpEntry, tmpEntry + this.normalDirection);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="structNormalLine.html">NormalLine</a>(tmpEntry, tmpNorm);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="structNormalLine.html">NormalLine</a>(this.center, this.normalLine);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">     * calculate the entry point of a ray defined by source of light (point) and by a propagation direction (vector).</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">     * @param source source of the ray</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">     * @param direction propagation-direction of the ray</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">     * @return Normal Line at the entry point of this ray</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#ab8481a747922141e2163c81c5f040b41">   87</a></span>&#160;    <a class="code" href="structNormalLine.html">NormalLine</a> <a class="code" href="structPlanaMirror.html#ab8481a747922141e2163c81c5f040b41">calculateNormal</a>(point source, vector direction) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        line incidentRay = line(source, source + direction);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        point entryPoint = intersectionpoint(incidentRay, this.surfaceLine);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        line tmpNormal = line(entryPoint, entryPoint + this.normalDirection);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structNormalLine.html">NormalLine</a>(entryPoint, tmpNormal);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">     * calculates the reflected point of a given source and the given normal line.</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">     * That is the point, which is symetrical to the source point with noral line as Ayis of Symetry.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">     * @param source source of line</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">     * @param nl normal line to the mirror surface</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#af9497d653fa5b5585df9bb9c1dbd8bb0">  102</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#af9497d653fa5b5585df9bb9c1dbd8bb0">reflectedPoint</a>(point source, <a class="code" href="structNormalLine.html">NormalLine</a> nl){</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        line tmpNorm = nl.<a class="code" href="structNormalLine.html#a950f30dd64708d2c304aa850db160a67">normalLine</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        transform tt = reflect(tmpNorm);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> tt * source;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">     * calculate the reflected ray of a entry ray from given source to the (default) entry</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">     * point of this mirror</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a96eb6d16f68d9908ff464ccfe1348425">  112</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#a96eb6d16f68d9908ff464ccfe1348425">reflectedPoint</a>(point source, real incidentPosition=0) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="structNormalLine.html">NormalLine</a> nl = <a class="code" href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">calculateNormal</a>(incidentPosition);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="structPlanaMirror.html#af9497d653fa5b5585df9bb9c1dbd8bb0">reflectedPoint</a>(source, nl);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">     * Image point of a given source point, that is the symetrical point of the source point</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">     * relativity to the mirror surface</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a1b49f39fea07bf3b7b332761c80e0562">  121</a></span>&#160;    point <a class="code" href="structPlanaMirror.html#a1b49f39fea07bf3b7b332761c80e0562">imagePoint</a>(point source){</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        transform m = reflect(this.surfaceLine);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">return</span> m*source;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">     * setup size for mirror to make it draw-able</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">     * @param leftWidth distance from entry point to the left side of the mirror</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">     * @param rightWidth distance from entry point to the right side of the mirror</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">     * @param normalLength the length of the drawn part of the normal ray, measured from entry point</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">     * @return this mirror</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#aca56ae0d51f4eec2e95ad2f7fad11809">  135</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#aca56ae0d51f4eec2e95ad2f7fad11809">setupMirrorSize</a>(real leftWidth, real rightWidth=leftWidth, real <a class="code" href="structPlanaMirror.html#ae3ddaad2e23971def9a71f2fde5521da">normalLength</a>=leftWidth, real thickness=<a class="code" href="optik_8asy.html#a25fc3f9b400c22e827137f4017885b98">mirrorThickness</a>){</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="comment">// properties for drawing:</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        this.offsetP = -thickness * unit(this.normalDirection);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        this.mostLeft = curpoint(this.surfaceLine, leftWidth);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        this.leftOffset = this.mostLeft + this.<a class="code" href="structPlanaMirror.html#a5fafa7e1472d809f6041e7e01a8a39c2">offsetP</a>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        this.mostRight = curpoint(this.surfaceLine, -rightWidth);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        this.rightOffset = this.mostRight + this.<a class="code" href="structPlanaMirror.html#a5fafa7e1472d809f6041e7e01a8a39c2">offsetP</a>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        this.normalLength = <a class="code" href="structPlanaMirror.html#ae3ddaad2e23971def9a71f2fde5521da">normalLength</a>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        this.normalFarthest = this.normalLength*unit(this.normalDirection);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">     * draw the mirror accorded to its side</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a1fe01c4514a7ca8a41aa48b8f6e7a97d">  153</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a1fe01c4514a7ca8a41aa48b8f6e7a97d">drawMirror</a>(<span class="keywordtype">bool</span> withNormal=<span class="keyword">true</span>, pen p=defaultpen) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        segment mSurface = segment(<a class="code" href="structPlanaMirror.html#a3597461644ea04749c0f6c8d0b229cd1">mostLeft</a>, <a class="code" href="structPlanaMirror.html#a003707583c5c7506fcb77867d61bbecd">mostRight</a>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        fill( <a class="code" href="structPlanaMirror.html#a3597461644ea04749c0f6c8d0b229cd1">mostLeft</a> -- <a class="code" href="structPlanaMirror.html#aca117a42aba2ce8fff2bf0a70a9510ad">leftOffset</a> -- <a class="code" href="structPlanaMirror.html#a344dd073c81b8e59857a3fc94837e766">rightOffset</a> -- <a class="code" href="structPlanaMirror.html#a003707583c5c7506fcb77867d61bbecd">mostRight</a> -- cycle, p + <a class="code" href="optik_8asy.html#a425696fae280e2c9847c2f2b1261dae7">mirrorColor</a> );</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        draw( mSurface );</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span>(withNormal) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            segment mNormal = segment(this.center + <a class="code" href="structPlanaMirror.html#a5fafa7e1472d809f6041e7e01a8a39c2">offsetP</a>, this.center);<span class="comment">//</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            draw( mNormal, p);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">     * @param source source of ray</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">     * @param nl must be calculated before</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">     * @param arrowPosition</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a9cfc08229490d302f84d56f89a82e5c0">  167</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a9cfc08229490d302f84d56f89a82e5c0">drawIncidentRay</a>(point source, <a class="code" href="structNormalLine.html">NormalLine</a> nl, real arrowPosition=0, pen p = defaultpen){</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        line entryRay = line(source, <span class="keyword">false</span>, nl.<a class="code" href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">entry</a>, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        draw(</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            entryRay,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            arrow=Arrow(<a class="code" href="optik_8asy.html#a3da9b2ef35425ab3667401373bf294f9">rayArrowSize</a>, position=arrowPosition),</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            p = p</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        );</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">     * @param source source of ray</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">     * @param incidentPosition defines the position (positive or negative) from the mirror center point</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">     * to the entry point.</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">     * @param arrowPosition defines the relativ position (in Interval [0,1]) of the arrow on the</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">     * incident ray. The arrow is placed by value 0 at the source, by value 1 at the entry point</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">     * @return this mirror</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a90711c406fb94bb9d9e0c65654dcd6ef">  185</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a90711c406fb94bb9d9e0c65654dcd6ef">drawIncidentRay</a>(point source, real incidentPosition = 0.0, real arrowPosition=0, pen p = defaultpen){</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="structNormalLine.html">NormalLine</a> nl = this.<a class="code" href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">calculateNormal</a>(incidentPosition);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="structPlanaMirror.html#a9cfc08229490d302f84d56f89a82e5c0">drawIncidentRay</a>(source, nl, arrowPosition, p);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">     * @param source source of ray</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">     * @param nl must be calculated before</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a033260c61f8f3bdec9e10861e0982676">  195</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a033260c61f8f3bdec9e10861e0982676">drawReflectedRay</a>(point source, <a class="code" href="structNormalLine.html">NormalLine</a> nl, real arrowPosition=1, real rayLength=0, pen p = defaultpen){</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        point target = this.<a class="code" href="structPlanaMirror.html#af9497d653fa5b5585df9bb9c1dbd8bb0">reflectedPoint</a>(source, nl);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        line ray = line(nl.<a class="code" href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">entry</a>, <span class="keyword">false</span>, target, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">if</span>(rayLength &gt; 0) {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            point target = curpoint(ray, rayLength);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            ray = line(nl.<a class="code" href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">entry</a>, <span class="keyword">false</span>, target, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        draw(</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            ray,</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            arrow=Arrow(<a class="code" href="optik_8asy.html#a3da9b2ef35425ab3667401373bf294f9">rayArrowSize</a>, position=arrowPosition),</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            p = p</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        );</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">     * @param source ray source</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">     * @param incidentPosition where the ray from source touch the mirror surface</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">     * @param arrowPosition</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">     * @param rayLength</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a6d619fc5b0b9a19d15771d58847e5055">  216</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a6d619fc5b0b9a19d15771d58847e5055">drawReflectedRay</a>(point source, real incidentPosition = 0.0, real arrowPosition=1, real rayLength=0, pen p = defaultpen) {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <a class="code" href="structNormalLine.html">NormalLine</a> nl = this.<a class="code" href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">calculateNormal</a>(incidentPosition);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="structPlanaMirror.html#a033260c61f8f3bdec9e10861e0982676">drawReflectedRay</a>(source, nl, arrowPosition, rayLength, p);</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a321b49fd9b62dabf4eb6e50fff4a4290">  221</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a321b49fd9b62dabf4eb6e50fff4a4290">drawImageSegment</a>(<a class="code" href="structNormalLine.html">NormalLine</a> nl, point <a class="code" href="structPlanaMirror.html#a1b49f39fea07bf3b7b332761c80e0562">imagePoint</a>, pen p = defaultpen){</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        segment s = segment(nl.<a class="code" href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">entry</a>, <a class="code" href="structPlanaMirror.html#a1b49f39fea07bf3b7b332761c80e0562">imagePoint</a>);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        draw( s, p + <a class="code" href="optik_8asy.html#a46e3c45a84fab0c7abd710aae9b9cba0">virtualRay</a>);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#ab23c918e63470ff94285729e13dd80ff">  228</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#ab23c918e63470ff94285729e13dd80ff">labelMirror</a>(Label surfaceL=<span class="stringliteral">&quot;\tLabel{Grenzfläche}&quot;</span>, Label normalL=<span class="stringliteral">&quot;\tLabel{Einfallslot}&quot;</span>){</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">if</span>( surfaceL.align.default) {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            label(surfaceL, this.mostLeft, align = N);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            label(surfaceL, this.mostLeft);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">if</span>(normalL.align.default) {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            label(normalL, this.normalFarthest, align=N);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            label(normalL, this.normalFarthest);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    }</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#aa92b65b85510c61910b37530f0c47b8a">  242</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#aa92b65b85510c61910b37530f0c47b8a">labelRays</a>(point source, Label incident, Label reflected=incident) {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        markangle(incident, this.normalDirection, this.center, source, arrow=Arrows(size=<a class="code" href="optik_8asy.html#a2783b181efa0b51edf036c2623ec8d1f">arcArrowSize</a>) );</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">if</span> (reflected != <span class="keyword">null</span>) {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            point target = this.<a class="code" href="structPlanaMirror.html#af9497d653fa5b5585df9bb9c1dbd8bb0">reflectedPoint</a>(source);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            markangle(reflected, target, this.center, this.normalDirection, arrow=Arrows(size=<a class="code" href="optik_8asy.html#a2783b181efa0b51edf036c2623ec8d1f">arcArrowSize</a>) );</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            segment trueNormal = segment(this.center, this.center + this.normalFarthest);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            draw( trueNormal, p + <a class="code" href="optik_8asy.html#af9af1839c3950b3d6fcdbcd0c5814598">mirrorNormalLine</a> );</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">     * @param nl must be calculate before</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a0ccdea4f7eebad1cb2a7ae17604c4c83">  170</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a0ccdea4f7eebad1cb2a7ae17604c4c83">drawNormal</a>(<a class="code" href="structNormalLine.html">NormalLine</a> nl, real length=this.normalLength, pen p = defaultpen) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        segment trueNormal = segment(nl.<a class="code" href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">entry</a>, nl.<a class="code" href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">entry</a> + length*unit(this.normalDirection));</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        draw( trueNormal, p + <a class="code" href="optik_8asy.html#af9af1839c3950b3d6fcdbcd0c5814598">mirrorNormalLine</a> );</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">     * @param incidentPosition is used to calculate the normal line and the contact point on the surface of mirror</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">     * @param length the length of the normal segment</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a6c5be3a59bfa9b75c63fd7235bebdc2e">  180</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a6c5be3a59bfa9b75c63fd7235bebdc2e">drawNormal</a>(real incidentPosition, real length=this.normalLength, pen p = defaultpen) {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <a class="code" href="structNormalLine.html">NormalLine</a> nl = this.<a class="code" href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">calculateNormal</a>(incidentPosition);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="structPlanaMirror.html#a0ccdea4f7eebad1cb2a7ae17604c4c83">drawNormal</a>(nl, length, p);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">     * @param source source of ray</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">     * @param nl must be calculated before</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">     * @param arrowPosition</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a9cfc08229490d302f84d56f89a82e5c0">  191</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a9cfc08229490d302f84d56f89a82e5c0">drawIncidentRay</a>(point source, <a class="code" href="structNormalLine.html">NormalLine</a> nl, real arrowPosition=0, pen p = defaultpen){</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        line entryRay = line(source, <span class="keyword">false</span>, nl.<a class="code" href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">entry</a>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        draw(</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            entryRay,</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            arrow=Arrow(<a class="code" href="optik_8asy.html#a3da9b2ef35425ab3667401373bf294f9">rayArrowSize</a>, position=arrowPosition),</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            p = p</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        );</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">     * @param source source of ray</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">     * @param incidentPosition defines the position (positive or negative) from the mirror center point</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">     * to the entry point.</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">     * @param arrowPosition defines the relativ position (in Interval [0,1]) of the arrow on the</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">     * incident ray. The arrow is placed by value 0 at the source, by value 1 at the entry point</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">     * @return this mirror</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a90711c406fb94bb9d9e0c65654dcd6ef">  209</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a90711c406fb94bb9d9e0c65654dcd6ef">drawIncidentRay</a>(point source, real incidentPosition = 0.0, real arrowPosition=0, pen p = defaultpen){</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="structNormalLine.html">NormalLine</a> nl = this.<a class="code" href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">calculateNormal</a>(incidentPosition);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="structPlanaMirror.html#a9cfc08229490d302f84d56f89a82e5c0">drawIncidentRay</a>(source, nl, arrowPosition, p);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment">     * @param source source of ray</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">     * @param nl must be calculated before</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a033260c61f8f3bdec9e10861e0982676">  219</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a033260c61f8f3bdec9e10861e0982676">drawReflectedRay</a>(point source, <a class="code" href="structNormalLine.html">NormalLine</a> nl, real arrowPosition=1, real rayLength=0, pen p = defaultpen){</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        point target = this.<a class="code" href="structPlanaMirror.html#af9497d653fa5b5585df9bb9c1dbd8bb0">reflectedPoint</a>(source, nl);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        line ray = line(nl.<a class="code" href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">entry</a>, <span class="keyword">false</span>, target, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">if</span>(rayLength &gt; 0) {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            point target = curpoint(ray, rayLength);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            ray = line(nl.<a class="code" href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">entry</a>, <span class="keyword">false</span>, target, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        draw(</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            ray,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            arrow=Arrow(<a class="code" href="optik_8asy.html#a3da9b2ef35425ab3667401373bf294f9">rayArrowSize</a>, position=arrowPosition),</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            p = p</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        );</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">     * @param source ray source</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">     * @param incidentPosition where the ray from source touch the mirror surface</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">     * @param arrowPosition</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">     * @param rayLength</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a6d619fc5b0b9a19d15771d58847e5055">  240</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a6d619fc5b0b9a19d15771d58847e5055">drawReflectedRay</a>(point source, real incidentPosition = 0.0, real arrowPosition=1, real rayLength=0, pen p = defaultpen) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="structNormalLine.html">NormalLine</a> nl = this.<a class="code" href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">calculateNormal</a>(incidentPosition);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="structPlanaMirror.html#a033260c61f8f3bdec9e10861e0982676">drawReflectedRay</a>(source, nl, arrowPosition, rayLength, p);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#a321b49fd9b62dabf4eb6e50fff4a4290">  245</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#a321b49fd9b62dabf4eb6e50fff4a4290">drawImageSegment</a>(<a class="code" href="structNormalLine.html">NormalLine</a> nl, point <a class="code" href="structPlanaMirror.html#a1b49f39fea07bf3b7b332761c80e0562">imagePoint</a>, pen p = defaultpen){</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        segment s = segment(nl.<a class="code" href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">entry</a>, <a class="code" href="structPlanaMirror.html#a1b49f39fea07bf3b7b332761c80e0562">imagePoint</a>);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        draw( s, p + <a class="code" href="optik_8asy.html#a46e3c45a84fab0c7abd710aae9b9cba0">virtualRay</a>);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#acf21efd8fa7b0848b03cddfe2fe7f494">  252</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#acf21efd8fa7b0848b03cddfe2fe7f494">labelMirror</a>(Label surfaceL=<span class="stringliteral">&quot;\tLabel{Grenzfläche}&quot;</span>, Label normalL=<span class="stringliteral">&quot;\tLabel{Normal}&quot;</span>){</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">if</span>( surfaceL.align.default) {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            label(surfaceL, this.mostLeft, align = N);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            label(surfaceL, this.mostLeft);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">if</span>(normalL.align.default) {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            label(normalL, this.normalFarthest, align=N);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            label(normalL, this.normalFarthest);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="structPlanaMirror.html#aa92b65b85510c61910b37530f0c47b8a">  266</a></span>&#160;    <a class="code" href="structPlanaMirror.html">PlanaMirror</a> <a class="code" href="structPlanaMirror.html#aa92b65b85510c61910b37530f0c47b8a">labelRays</a>(point source, Label incident, Label reflected=incident) {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        markangle(incident, this.normalDirection, this.center, source, arrow=Arrows(size=<a class="code" href="optik_8asy.html#a2783b181efa0b51edf036c2623ec8d1f">arcArrowSize</a>) );</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">if</span> (reflected != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            point target = this.<a class="code" href="structPlanaMirror.html#af9497d653fa5b5585df9bb9c1dbd8bb0">reflectedPoint</a>(source);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            markangle(reflected, target, this.center, this.normalDirection, arrow=Arrows(size=<a class="code" href="optik_8asy.html#a2783b181efa0b51edf036c2623ec8d1f">arcArrowSize</a>) );</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        }</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
 <div class="ttc" id="aoptik_8asy_html_a25fc3f9b400c22e827137f4017885b98"><div class="ttname"><a href="optik_8asy.html#a25fc3f9b400c22e827137f4017885b98">mirrorThickness</a></div><div class="ttdeci">real mirrorThickness</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00005">optik.asy:5</a></div></div>
 <div class="ttc" id="aoptik_8asy_html_a2783b181efa0b51edf036c2623ec8d1f"><div class="ttname"><a href="optik_8asy.html#a2783b181efa0b51edf036c2623ec8d1f">arcArrowSize</a></div><div class="ttdeci">real arcArrowSize</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00004">optik.asy:4</a></div></div>
 <div class="ttc" id="aoptik_8asy_html_a3da9b2ef35425ab3667401373bf294f9"><div class="ttname"><a href="optik_8asy.html#a3da9b2ef35425ab3667401373bf294f9">rayArrowSize</a></div><div class="ttdeci">real rayArrowSize</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00003">optik.asy:3</a></div></div>
@@ -339,34 +363,33 @@ $(function() {
 <div class="ttc" id="astructNormalLine_html_a2784bb6ef75d3913177bda60d98327dc"><div class="ttname"><a href="structNormalLine.html#a2784bb6ef75d3913177bda60d98327dc">NormalLine::entry</a></div><div class="ttdeci">point entry</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00011">optik.asy:11</a></div></div>
 <div class="ttc" id="astructNormalLine_html_a950f30dd64708d2c304aa850db160a67"><div class="ttname"><a href="structNormalLine.html#a950f30dd64708d2c304aa850db160a67">NormalLine::normalLine</a></div><div class="ttdeci">line normalLine</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00012">optik.asy:12</a></div></div>
 <div class="ttc" id="astructPlanaMirror_html"><div class="ttname"><a href="structPlanaMirror.html">PlanaMirror</a></div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00020">optik.asy:20</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a003707583c5c7506fcb77867d61bbecd"><div class="ttname"><a href="structPlanaMirror.html#a003707583c5c7506fcb77867d61bbecd">PlanaMirror::mostRight</a></div><div class="ttdeci">point mostRight</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00031">optik.asy:31</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a033260c61f8f3bdec9e10861e0982676"><div class="ttname"><a href="structPlanaMirror.html#a033260c61f8f3bdec9e10861e0982676">PlanaMirror::drawReflectedRay</a></div><div class="ttdeci">PlanaMirror drawReflectedRay(point source, NormalLine nl, real arrowPosition=1, real rayLength=0, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00195">optik.asy:195</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a0ccdea4f7eebad1cb2a7ae17604c4c83"><div class="ttname"><a href="structPlanaMirror.html#a0ccdea4f7eebad1cb2a7ae17604c4c83">PlanaMirror::drawNormal</a></div><div class="ttdeci">PlanaMirror drawNormal(NormalLine nl, real length=this.normalLength, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00146">optik.asy:146</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a1b49f39fea07bf3b7b332761c80e0562"><div class="ttname"><a href="structPlanaMirror.html#a1b49f39fea07bf3b7b332761c80e0562">PlanaMirror::imagePoint</a></div><div class="ttdeci">point imagePoint(point source)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00097">optik.asy:97</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a1fe01c4514a7ca8a41aa48b8f6e7a97d"><div class="ttname"><a href="structPlanaMirror.html#a1fe01c4514a7ca8a41aa48b8f6e7a97d">PlanaMirror::drawMirror</a></div><div class="ttdeci">PlanaMirror drawMirror(bool withNormal=true, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00129">optik.asy:129</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a321b49fd9b62dabf4eb6e50fff4a4290"><div class="ttname"><a href="structPlanaMirror.html#a321b49fd9b62dabf4eb6e50fff4a4290">PlanaMirror::drawImageSegment</a></div><div class="ttdeci">PlanaMirror drawImageSegment(NormalLine nl, point imagePoint, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00221">optik.asy:221</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a344dd073c81b8e59857a3fc94837e766"><div class="ttname"><a href="structPlanaMirror.html#a344dd073c81b8e59857a3fc94837e766">PlanaMirror::rightOffset</a></div><div class="ttdeci">point rightOffset</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00032">optik.asy:32</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a3597461644ea04749c0f6c8d0b229cd1"><div class="ttname"><a href="structPlanaMirror.html#a3597461644ea04749c0f6c8d0b229cd1">PlanaMirror::mostLeft</a></div><div class="ttdeci">point mostLeft</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00029">optik.asy:29</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a654317e9b71f2ae8a339217cd37c756a"><div class="ttname"><a href="structPlanaMirror.html#a654317e9b71f2ae8a339217cd37c756a">PlanaMirror::offsetP</a></div><div class="ttdeci">vector offsetP</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00028">optik.asy:28</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a6a2e0aee263b2ca043b034a78eca704a"><div class="ttname"><a href="structPlanaMirror.html#a6a2e0aee263b2ca043b034a78eca704a">PlanaMirror::normalDirection</a></div><div class="ttdeci">vector normalDirection</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00022">optik.asy:22</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a6c5be3a59bfa9b75c63fd7235bebdc2e"><div class="ttname"><a href="structPlanaMirror.html#a6c5be3a59bfa9b75c63fd7235bebdc2e">PlanaMirror::drawNormal</a></div><div class="ttdeci">PlanaMirror drawNormal(real incidentPosition, real length=this.normalLength, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00156">optik.asy:156</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a6d619fc5b0b9a19d15771d58847e5055"><div class="ttname"><a href="structPlanaMirror.html#a6d619fc5b0b9a19d15771d58847e5055">PlanaMirror::drawReflectedRay</a></div><div class="ttdeci">PlanaMirror drawReflectedRay(point source, real incidentPosition=0.0, real arrowPosition=1, real rayLength=0, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00216">optik.asy:216</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a78eee01f48a31be05a7e91fe313604d1"><div class="ttname"><a href="structPlanaMirror.html#a78eee01f48a31be05a7e91fe313604d1">PlanaMirror::normalLine</a></div><div class="ttdeci">line normalLine</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00024">optik.asy:24</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a90711c406fb94bb9d9e0c65654dcd6ef"><div class="ttname"><a href="structPlanaMirror.html#a90711c406fb94bb9d9e0c65654dcd6ef">PlanaMirror::drawIncidentRay</a></div><div class="ttdeci">PlanaMirror drawIncidentRay(point source, real incidentPosition=0.0, real arrowPosition=0, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00185">optik.asy:185</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a96eb6d16f68d9908ff464ccfe1348425"><div class="ttname"><a href="structPlanaMirror.html#a96eb6d16f68d9908ff464ccfe1348425">PlanaMirror::reflectedPoint</a></div><div class="ttdeci">point reflectedPoint(point source, real incidentPosition=0)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00088">optik.asy:88</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_a9cfc08229490d302f84d56f89a82e5c0"><div class="ttname"><a href="structPlanaMirror.html#a9cfc08229490d302f84d56f89a82e5c0">PlanaMirror::drawIncidentRay</a></div><div class="ttdeci">PlanaMirror drawIncidentRay(point source, NormalLine nl, real arrowPosition=0, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00167">optik.asy:167</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_aa92b65b85510c61910b37530f0c47b8a"><div class="ttname"><a href="structPlanaMirror.html#aa92b65b85510c61910b37530f0c47b8a">PlanaMirror::labelRays</a></div><div class="ttdeci">PlanaMirror labelRays(point source, Label incident, Label reflected=incident)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00242">optik.asy:242</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_ab23c918e63470ff94285729e13dd80ff"><div class="ttname"><a href="structPlanaMirror.html#ab23c918e63470ff94285729e13dd80ff">PlanaMirror::labelMirror</a></div><div class="ttdeci">PlanaMirror labelMirror(Label surfaceL=&quot;\tLabel{Grenzfläche}&quot;, Label normalL=&quot;\tLabel{Einfallslot}&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00228">optik.asy:228</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_ab504ca03288a6d64aa0ff1f047faf4ee"><div class="ttname"><a href="structPlanaMirror.html#ab504ca03288a6d64aa0ff1f047faf4ee">PlanaMirror::surfaceLine</a></div><div class="ttdeci">line surfaceLine</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00025">optik.asy:25</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_ab8481a747922141e2163c81c5f040b41"><div class="ttname"><a href="structPlanaMirror.html#ab8481a747922141e2163c81c5f040b41">PlanaMirror::calculateNormal</a></div><div class="ttdeci">NormalLine calculateNormal(point source, vector direction)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00071">optik.asy:71</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_aca117a42aba2ce8fff2bf0a70a9510ad"><div class="ttname"><a href="structPlanaMirror.html#aca117a42aba2ce8fff2bf0a70a9510ad">PlanaMirror::leftOffset</a></div><div class="ttdeci">point leftOffset</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00030">optik.asy:30</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_aca56ae0d51f4eec2e95ad2f7fad11809"><div class="ttname"><a href="structPlanaMirror.html#aca56ae0d51f4eec2e95ad2f7fad11809">PlanaMirror::setupMirrorSize</a></div><div class="ttdeci">PlanaMirror setupMirrorSize(real leftWidth, real rightWidth=leftWidth, real normalLength=leftWidth, real thickness=mirrorThickness)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00111">optik.asy:111</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_adf1626a518f9a025daa80c5d6952ac8b"><div class="ttname"><a href="structPlanaMirror.html#adf1626a518f9a025daa80c5d6952ac8b">PlanaMirror::center</a></div><div class="ttdeci">point center</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00023">optik.asy:23</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_ae3ddaad2e23971def9a71f2fde5521da"><div class="ttname"><a href="structPlanaMirror.html#ae3ddaad2e23971def9a71f2fde5521da">PlanaMirror::normalLength</a></div><div class="ttdeci">real normalLength</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00035">optik.asy:35</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_aeeb1f3735c866d854a2d6b032ea78c34"><div class="ttname"><a href="structPlanaMirror.html#aeeb1f3735c866d854a2d6b032ea78c34">PlanaMirror::t</a></div><div class="ttdeci">private transform t</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00026">optik.asy:26</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_af9497d653fa5b5585df9bb9c1dbd8bb0"><div class="ttname"><a href="structPlanaMirror.html#af9497d653fa5b5585df9bb9c1dbd8bb0">PlanaMirror::reflectedPoint</a></div><div class="ttdeci">point reflectedPoint(point source, NormalLine nl)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00078">optik.asy:78</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_afaec4ac86c9d643cf464180ba47bb82b"><div class="ttname"><a href="structPlanaMirror.html#afaec4ac86c9d643cf464180ba47bb82b">PlanaMirror::normalFarthest</a></div><div class="ttdeci">point normalFarthest</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00033">optik.asy:33</a></div></div>
-<div class="ttc" id="astructPlanaMirror_html_afc28857eeb6ff781023ff83cb725bd8d"><div class="ttname"><a href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">PlanaMirror::calculateNormal</a></div><div class="ttdeci">NormalLine calculateNormal(real incidentPosition)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00055">optik.asy:55</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a003707583c5c7506fcb77867d61bbecd"><div class="ttname"><a href="structPlanaMirror.html#a003707583c5c7506fcb77867d61bbecd">PlanaMirror::mostRight</a></div><div class="ttdeci">point mostRight</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00044">optik.asy:44</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a033260c61f8f3bdec9e10861e0982676"><div class="ttname"><a href="structPlanaMirror.html#a033260c61f8f3bdec9e10861e0982676">PlanaMirror::drawReflectedRay</a></div><div class="ttdeci">PlanaMirror drawReflectedRay(point source, NormalLine nl, real arrowPosition=1, real rayLength=0, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00219">optik.asy:219</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a0ccdea4f7eebad1cb2a7ae17604c4c83"><div class="ttname"><a href="structPlanaMirror.html#a0ccdea4f7eebad1cb2a7ae17604c4c83">PlanaMirror::drawNormal</a></div><div class="ttdeci">PlanaMirror drawNormal(NormalLine nl, real length=this.normalLength, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00170">optik.asy:170</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a1b49f39fea07bf3b7b332761c80e0562"><div class="ttname"><a href="structPlanaMirror.html#a1b49f39fea07bf3b7b332761c80e0562">PlanaMirror::imagePoint</a></div><div class="ttdeci">point imagePoint(point source)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00121">optik.asy:121</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a1fe01c4514a7ca8a41aa48b8f6e7a97d"><div class="ttname"><a href="structPlanaMirror.html#a1fe01c4514a7ca8a41aa48b8f6e7a97d">PlanaMirror::drawMirror</a></div><div class="ttdeci">PlanaMirror drawMirror(bool withNormal=true, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00153">optik.asy:153</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a321b49fd9b62dabf4eb6e50fff4a4290"><div class="ttname"><a href="structPlanaMirror.html#a321b49fd9b62dabf4eb6e50fff4a4290">PlanaMirror::drawImageSegment</a></div><div class="ttdeci">PlanaMirror drawImageSegment(NormalLine nl, point imagePoint, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00245">optik.asy:245</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a344dd073c81b8e59857a3fc94837e766"><div class="ttname"><a href="structPlanaMirror.html#a344dd073c81b8e59857a3fc94837e766">PlanaMirror::rightOffset</a></div><div class="ttdeci">point rightOffset</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00045">optik.asy:45</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a3597461644ea04749c0f6c8d0b229cd1"><div class="ttname"><a href="structPlanaMirror.html#a3597461644ea04749c0f6c8d0b229cd1">PlanaMirror::mostLeft</a></div><div class="ttdeci">point mostLeft</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00042">optik.asy:42</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a5fafa7e1472d809f6041e7e01a8a39c2"><div class="ttname"><a href="structPlanaMirror.html#a5fafa7e1472d809f6041e7e01a8a39c2">PlanaMirror::offsetP</a></div><div class="ttdeci">private vector offsetP</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00041">optik.asy:41</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a6a2e0aee263b2ca043b034a78eca704a"><div class="ttname"><a href="structPlanaMirror.html#a6a2e0aee263b2ca043b034a78eca704a">PlanaMirror::normalDirection</a></div><div class="ttdeci">vector normalDirection</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00025">optik.asy:25</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a6c5be3a59bfa9b75c63fd7235bebdc2e"><div class="ttname"><a href="structPlanaMirror.html#a6c5be3a59bfa9b75c63fd7235bebdc2e">PlanaMirror::drawNormal</a></div><div class="ttdeci">PlanaMirror drawNormal(real incidentPosition, real length=this.normalLength, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00180">optik.asy:180</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a6d619fc5b0b9a19d15771d58847e5055"><div class="ttname"><a href="structPlanaMirror.html#a6d619fc5b0b9a19d15771d58847e5055">PlanaMirror::drawReflectedRay</a></div><div class="ttdeci">PlanaMirror drawReflectedRay(point source, real incidentPosition=0.0, real arrowPosition=1, real rayLength=0, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00240">optik.asy:240</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a78eee01f48a31be05a7e91fe313604d1"><div class="ttname"><a href="structPlanaMirror.html#a78eee01f48a31be05a7e91fe313604d1">PlanaMirror::normalLine</a></div><div class="ttdeci">line normalLine</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00033">optik.asy:33</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a90711c406fb94bb9d9e0c65654dcd6ef"><div class="ttname"><a href="structPlanaMirror.html#a90711c406fb94bb9d9e0c65654dcd6ef">PlanaMirror::drawIncidentRay</a></div><div class="ttdeci">PlanaMirror drawIncidentRay(point source, real incidentPosition=0.0, real arrowPosition=0, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00209">optik.asy:209</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a96eb6d16f68d9908ff464ccfe1348425"><div class="ttname"><a href="structPlanaMirror.html#a96eb6d16f68d9908ff464ccfe1348425">PlanaMirror::reflectedPoint</a></div><div class="ttdeci">point reflectedPoint(point source, real incidentPosition=0)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00112">optik.asy:112</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_a9cfc08229490d302f84d56f89a82e5c0"><div class="ttname"><a href="structPlanaMirror.html#a9cfc08229490d302f84d56f89a82e5c0">PlanaMirror::drawIncidentRay</a></div><div class="ttdeci">PlanaMirror drawIncidentRay(point source, NormalLine nl, real arrowPosition=0, pen p=defaultpen)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00191">optik.asy:191</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_aa92b65b85510c61910b37530f0c47b8a"><div class="ttname"><a href="structPlanaMirror.html#aa92b65b85510c61910b37530f0c47b8a">PlanaMirror::labelRays</a></div><div class="ttdeci">PlanaMirror labelRays(point source, Label incident, Label reflected=incident)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00266">optik.asy:266</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_ab504ca03288a6d64aa0ff1f047faf4ee"><div class="ttname"><a href="structPlanaMirror.html#ab504ca03288a6d64aa0ff1f047faf4ee">PlanaMirror::surfaceLine</a></div><div class="ttdeci">line surfaceLine</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00037">optik.asy:37</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_ab8481a747922141e2163c81c5f040b41"><div class="ttname"><a href="structPlanaMirror.html#ab8481a747922141e2163c81c5f040b41">PlanaMirror::calculateNormal</a></div><div class="ttdeci">NormalLine calculateNormal(point source, vector direction)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00087">optik.asy:87</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_aca117a42aba2ce8fff2bf0a70a9510ad"><div class="ttname"><a href="structPlanaMirror.html#aca117a42aba2ce8fff2bf0a70a9510ad">PlanaMirror::leftOffset</a></div><div class="ttdeci">point leftOffset</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00043">optik.asy:43</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_aca56ae0d51f4eec2e95ad2f7fad11809"><div class="ttname"><a href="structPlanaMirror.html#aca56ae0d51f4eec2e95ad2f7fad11809">PlanaMirror::setupMirrorSize</a></div><div class="ttdeci">PlanaMirror setupMirrorSize(real leftWidth, real rightWidth=leftWidth, real normalLength=leftWidth, real thickness=mirrorThickness)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00135">optik.asy:135</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_acf21efd8fa7b0848b03cddfe2fe7f494"><div class="ttname"><a href="structPlanaMirror.html#acf21efd8fa7b0848b03cddfe2fe7f494">PlanaMirror::labelMirror</a></div><div class="ttdeci">PlanaMirror labelMirror(Label surfaceL=&quot;\tLabel{Grenzfläche}&quot;, Label normalL=&quot;\tLabel{Normal}&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00252">optik.asy:252</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_adf1626a518f9a025daa80c5d6952ac8b"><div class="ttname"><a href="structPlanaMirror.html#adf1626a518f9a025daa80c5d6952ac8b">PlanaMirror::center</a></div><div class="ttdeci">point center</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00029">optik.asy:29</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_ae3ddaad2e23971def9a71f2fde5521da"><div class="ttname"><a href="structPlanaMirror.html#ae3ddaad2e23971def9a71f2fde5521da">PlanaMirror::normalLength</a></div><div class="ttdeci">real normalLength</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00048">optik.asy:48</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_af9497d653fa5b5585df9bb9c1dbd8bb0"><div class="ttname"><a href="structPlanaMirror.html#af9497d653fa5b5585df9bb9c1dbd8bb0">PlanaMirror::reflectedPoint</a></div><div class="ttdeci">point reflectedPoint(point source, NormalLine nl)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00102">optik.asy:102</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_afaec4ac86c9d643cf464180ba47bb82b"><div class="ttname"><a href="structPlanaMirror.html#afaec4ac86c9d643cf464180ba47bb82b">PlanaMirror::normalFarthest</a></div><div class="ttdeci">point normalFarthest</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00046">optik.asy:46</a></div></div>
+<div class="ttc" id="astructPlanaMirror_html_afc28857eeb6ff781023ff83cb725bd8d"><div class="ttname"><a href="structPlanaMirror.html#afc28857eeb6ff781023ff83cb725bd8d">PlanaMirror::calculateNormal</a></div><div class="ttdeci">NormalLine calculateNormal(real incidentPosition)</div><div class="ttdef"><b>Definition:</b> <a href="optik_8asy_source.html#l00071">optik.asy:71</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
