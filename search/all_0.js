@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['arcarrowsize_0',['arcArrowSize',['../optik_8asy.html#a2783b181efa0b51edf036c2623ec8d1f',1,'optik.asy']]]
+  ['optik_0',['Optik',['../md_optik_2README.html',1,'']]],
+  ['optik_2easy_1',['optik.asy',['../optik_8asy.html',1,'']]]
 ];
